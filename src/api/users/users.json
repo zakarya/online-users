@@ -2,35 +2,35 @@
   {
     "userId": 1,
     "name": "John Doe",
-    "avatar": "",
+    "avatar": "https://randomuser.me/api/portraits/men/65.jpg",
     "username": "jdoe",
     "createdDate": "2016-03-19"
   },
   {
     "userId": 2,
     "name": "Jane Doe",
-    "avatar": "",
+    "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
     "username": "jadoe",
     "createdDate": "2017-02-15"
   },
   {
     "userId": 3,
     "name": "Ayden Gislason",
-    "avatar": "",
+    "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
     "username": "agislason",
     "createdDate": "2018-09-19"
   },
   {
     "userId": 4,
     "name": "Kaleigh Swift",
-    "avatar": "",
+    "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
     "username": "Carmela86",
     "createdDate": "2017-12-24"
   },
   {
     "userId": 5,
     "name": "Deangelo Simonis",
-    "avatar": "",
+    "avatar": "https://randomuser.me/api/portraits/men/35.jpg",
     "username": "Travon.Harber",
     "createdDate": "2018-02-11"
   }

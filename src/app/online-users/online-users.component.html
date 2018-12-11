@@ -1,0 +1,12 @@
+<button class="button"
+        (click)="toggleUsers()">
+  {{showUsers ? 'Hide': 'Show'}} Users
+</button>
+<ul *ngIf="users">
+  <li *ngFor="let user of users">
+    <img [src]="user.avatar"
+        [style.width.px]="imageWidth"
+        [alt]="user.username">
+    {{user.name}}
+  </li>
+</ul>
