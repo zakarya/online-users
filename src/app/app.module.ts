@@ -14,6 +14,9 @@ import { OnlineUsersComponent } from './online-users/online-users.component';
     BrowserModule,
     HttpClientModule
   ],
+  exports: [
+    OnlineUsersComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

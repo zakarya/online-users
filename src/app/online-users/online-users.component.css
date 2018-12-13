@@ -1,0 +1,15 @@
+li {
+  /* height: 60px; */
+  width: 300px;
+  color: #414141;
+  list-style: none;
+  text-align: justify;
+}
+
+button {
+  border: 3px solid #007bff;
+  border-radius: .25rem;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+}

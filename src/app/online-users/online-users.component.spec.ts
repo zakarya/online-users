@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OnlineUsersComponent } from './online-users.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('OnlineUsersComponent', () => {
   let component: OnlineUsersComponent;
@@ -8,7 +9,8 @@ describe('OnlineUsersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OnlineUsersComponent ]
+      declarations: [ OnlineUsersComponent ],
+      imports: [ HttpClientModule ]
     })
     .compileComponents();
   }));

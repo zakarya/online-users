@@ -2,11 +2,27 @@
         (click)="toggleUsers()">
   {{showUsers ? 'Hide': 'Show'}} Users
 </button>
-<ul *ngIf="users">
-  <li *ngFor="let user of users">
-    <img [src]="user.avatar"
-        [style.width.px]="imageWidth"
-        [alt]="user.username">
-    {{user.name}}
-  </li>
-</ul>
+<div class="online-user">
+  <ul *ngIf="showUsers">
+    <li *ngFor="let user of users">
+      <figure>
+          <img [src]="user.avatar"
+          [alt]="user.username">
+      </figure>
+      <div class="user-name">
+        <label>User's Name</label>
+          {{user.name}}
+      </div>
+      <div class="username">
+        <label>Username</label>
+        {{user.username}}
+      </div>
+      <div class="user-id">
+        {{user.userId}}
+      </div>
+      <div class="created-date">
+        {{user.createdDate}}
+      </div>
+    </li>
+  </ul>
+</div>
