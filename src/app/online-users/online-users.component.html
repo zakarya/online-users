@@ -1,28 +1,28 @@
-<button class="button"
-        (click)="toggleUsers()">
-  {{showUsers ? 'Hide': 'Show'}} Users
+<button class="dt-user__button"
+(click)="toggleUsers()">
+{{showUsers ? 'Hide': 'Show'}} Users
 </button>
-<div class="online-user">
-  <ul *ngIf="showUsers">
-    <li *ngFor="let user of users">
-      <figure>
-          <img [src]="user.avatar"
-          [alt]="user.username">
-      </figure>
-      <div class="user-name">
-        <label>User's Name</label>
-          {{user.name}}
-      </div>
-      <div class="username">
-        <label>Username</label>
-        {{user.username}}
-      </div>
-      <div class="user-id">
-        {{user.userId}}
-      </div>
-      <div class="created-date">
-        {{user.createdDate}}
-      </div>
-    </li>
-  </ul>
+<div class="dt-online-users" *ngIf="showUsers">
+  <div class="dt-user" *ngFor="let user of users">
+    <figure>
+      <img class="dt-user__img" [src]="user.avatar"
+      [alt]="user.username">
+    </figure>
+    <div class="dt-user__name">
+      <label class="dt-user__label">User's Name</label>
+      {{user.name}}
+    </div>
+    <div class="dt-user__username">
+      <label class="dt-user__label">Username</label>
+      {{user.username}}
+    </div>
+    <div class="dt-user__user-id">
+      <label class="dt-user__label">UserId</label>
+      {{user.userId}}
+    </div>
+    <div class="dt-user__created-date">
+      <label class="dt-user__label">Created Date</label>
+      {{user.createdDate | date}}
+    </div>
+  </div>
 </div>

@@ -1,15 +1,30 @@
-li {
-  /* height: 60px; */
-  width: 300px;
+.dt-online-users {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
   color: #414141;
-  list-style: none;
-  text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-button {
+.dt-user {
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.dt-user__button {
   border: 3px solid #007bff;
   border-radius: .25rem;
   height: 40px;
   background-color: #007bff;
   color: #fff;
+}
+
+.dt-user__label {
+  font-weight: bold;
+}
+
+figure > .dt-user__img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
