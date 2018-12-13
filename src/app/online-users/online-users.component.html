@@ -2,7 +2,7 @@
 (click)="toggleUsers()">
 {{showUsers ? 'Hide': 'Show'}} Users
 </button>
-<div class="dt-online-users" *ngIf="showUsers">
+<div class="dt-online-users" [@openClose]="'in'" *ngIf="showUsers" >
   <div class="dt-user" *ngFor="let user of users">
     <figure>
       <img class="dt-user__img" [src]="user.avatar"
