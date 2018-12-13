@@ -8,19 +8,19 @@
       <img class="dt-user__img" [src]="user.avatar"
       [alt]="user.username">
     </figure>
-    <div class="dt-user__name">
-      <label class="dt-user__label">User's Name</label>
-      {{user.name}}
-    </div>
-    <div class="dt-user__username">
-      <label class="dt-user__label">Username</label>
-      {{user.username}}
-    </div>
-    <div class="dt-user__user-id">
+    <div class="dt-user__info">
       <label class="dt-user__label">UserId</label>
       {{user.userId}}
     </div>
-    <div class="dt-user__created-date">
+    <div class="dt-user__info">
+      <label class="dt-user__label">User's Name</label>
+      {{user.name}}
+    </div>
+    <div class="dt-user__info">
+      <label class="dt-user__label">Username</label>
+      {{user.username}}
+    </div>
+    <div class="dt-user__info">
       <label class="dt-user__label">Created Date</label>
       {{user.createdDate | date}}
     </div>
